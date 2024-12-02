@@ -22,6 +22,6 @@ class Car {
     }
     
     func toString() -> String {
-        return "\(make) \(model) \(year) \(price)"
+        return "\(make) \(model) \(year) \(price.formatted(.currency(code: "USD")))"
     }
 }
