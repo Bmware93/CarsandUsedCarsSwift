@@ -12,6 +12,7 @@ class Car {
     var model: String
     var year: Int
     var price: Decimal
+    static var cars: [Car] = []
     
     init(make: String, model: String, year: Int, price: Decimal) {
         self.make = make
@@ -20,7 +21,7 @@ class Car {
         self.price = price
     }
     
-    func toString() {
-        print("\(make) \(model) \(year) \(price)")
+    func toString() -> String {
+        return "\(make) \(model) \(year) \(price)"
     }
 }

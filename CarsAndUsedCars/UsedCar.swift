@@ -14,5 +14,9 @@ class UsedCar: Car {
         self.mileage = mileage
         super.init(make: make, model: model, year: year, price: price)
     }
+    
+    override func toString() -> String {
+        super.toString() + "\nMileage: \(mileage)"
+    }
    
 }
