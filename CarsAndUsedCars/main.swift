@@ -20,7 +20,8 @@ var usedCar3 = UsedCar(make: "BMW", model: "X5", year: 2016, price: 18000, milea
 var usedCar4 = UsedCar(make: "Hyundai", model: "Elantra", year: 2018, price: 12000, mileage: 60000)
 var usedCar5 = UsedCar(make: "Subaru", model: "Outback", year: 2014, price: 9000, mileage: 110000)
 
-Car.cars.append(contentsOf: [newCar1])
+Car.cars.append(contentsOf: [newCar1,newCar2, newCar3, newCar4, newCar5, usedCar1, usedCar2, usedCar3, usedCar4, usedCar5])
+
 
 
 
