@@ -18,5 +18,4 @@ class UsedCar: Car {
     override func toString() -> String {
         super.toString() + "\nMileage: \(mileage)"
     }
-   
 }

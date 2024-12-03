@@ -8,7 +8,7 @@
 import Foundation
 
 var newCar1 = Car(make: "Toyota", model: "Prius", year: 2019, price: 20000)
-var newCar2 = Car(make: "Jeep", model: "Cherokee", year: 2025, price: 60000)
+var newCar2 = Car(make: "Jeep", model: "Grand Cherokee", year: 2025, price: 60000)
 var newCar3 = Car(make: "Honda", model: "Civic", year: 2024, price: 25000)
 var newCar4 = Car(make: "Tesla", model: "Model 3", year: 2023, price: 45000)
 var newCar5 = Car(make: "Chevrolet", model: "Bolt EV", year: 2024, price: 32000)
@@ -22,7 +22,7 @@ var usedCar5 = UsedCar(make: "Subaru", model: "Outback", year: 2014, price: 9000
 
 Car.cars.append(contentsOf: [newCar1,newCar2, newCar3, newCar4, newCar5, usedCar1, usedCar2, usedCar3, usedCar4, usedCar5])
 
-
+Car.listCars()
 
 
 

@@ -24,4 +24,10 @@ class Car {
     func toString() -> String {
         return "\(make) \(model) \(year) \(price.formatted(.currency(code: "USD")))"
     }
+    
+    static func listCars() {
+        for (index, car) in cars.enumerated() {
+            print(car.toString(), index)
+        }
+    }
 }
