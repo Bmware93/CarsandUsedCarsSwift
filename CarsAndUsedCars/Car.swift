@@ -30,4 +30,10 @@ class Car {
             print(car.toString(), index)
         }
     }
+    static func remove(index: Int) throws {
+        guard index >= 0 && index < cars.count else {
+            throw CarError.indexOutOfBounds
+        }
+        cars.remove(at: index)
+    }
 }
