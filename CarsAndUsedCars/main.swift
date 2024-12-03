@@ -21,14 +21,29 @@ var usedCar5 = UsedCar(make: "Subaru", model: "Outback", year: 2014, price: 9000
 
 Car.cars.append(contentsOf: [newCar1,newCar2, newCar3, newCar4, newCar5, usedCar1, usedCar2, usedCar3, usedCar4, usedCar5])
 
+func isRealNumber(_ string: String) -> Bool {
+    guard !string.isEmpty else { return false }
+    guard Int(string) != nil else { return false }
+    
+    return true
+}
+
+print("Welcome to the Renaissance Car Emporium.")
+print("We have an inventory of new and used cars, we hope you find something you like!")
+print("Here is our current list of cars we have for sale:")
+print()
 Car.listCars()
 
-do {
-    try Car.remove(index: 10)
-    print("Car has been successfully removed")
-} catch  {
-    print("Invalid index: \(error.localizedDescription)")
+print()
+print("Which car would you like to purchase today? Please select the number of the car you would like to purchase")
+var userChoice = readLine() ?? ""
+
+while !isRealNumber(userChoice)  {
+    print("Your input was invalid, please enter a valid number")
+    userChoice = readLine() ?? ""
 }
+
+
 
 
 

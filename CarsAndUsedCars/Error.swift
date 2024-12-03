@@ -7,6 +7,6 @@
 
 import Foundation
 
-enum CarError: String, Error {
+enum CarError: Error {
     case indexOutOfBounds
 }

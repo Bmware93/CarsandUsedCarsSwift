@@ -27,7 +27,7 @@ class Car {
     
     static func listCars() {
         for (index, car) in cars.enumerated() {
-            print(car.toString(), index)
+            print(index + 1, car.toString())
         }
     }
     static func remove(index: Int) throws {
