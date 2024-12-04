@@ -42,6 +42,24 @@ while !isRealNumber(userChoice)  {
     print("Your input was invalid, please enter a valid number")
     userChoice = readLine() ?? ""
 }
+var carChoice = Int(userChoice)!
+
+while carChoice < 1 || carChoice > Car.cars.count {
+    print("Your input was invalid, please enter a number between 1 and \(Car.cars.count)")
+    userChoice = readLine() ?? ""
+    carChoice = Int(userChoice) ?? 0
+}
+var selectedCar = Car.cars[carChoice - 1]
+
+print("You've selected \(selectedCar.toString()) ")
+print("Thank you for your purchase!")
+try Car.remove(index: carChoice - 1)
+
+print("Here is our updated list of cars:")
+print()
+Car.listCars()
+
+
 
 
 
